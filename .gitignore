@@ -1,0 +1,5 @@
+# File temporanei di log
+*.log
+
+# Cartelle temporanee
+temp/
