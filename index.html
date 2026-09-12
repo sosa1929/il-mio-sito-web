@@ -1,13 +1,114 @@
-# Il Mio Sito Web
-Progetto di esercitazione con HTML, CSS e Git.
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Il Mio Sito Web</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abate Motors | Luxury & Supercars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Benvenuto nel mio sito!</h1>
+
+    <!-- Header & Navigazione -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">ABATE <span>MOTORS</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#chi-siamo">Chi Siamo</a></li>
+                    <li><a href="#catalogo">Supercar</a></li>
+                    <li><a href="#contatti" class="btn-nav">Prenota Appuntamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <img src="images/hero-car.jpg" alt="Supercar Abate Motors" class="hero-bg">
+        <div class="container hero-content">
+            <h1 class="hero-title">L'Eccellenza Automobilistica su Misura</h1>
+            <p class="hero-subtitle">Selezione esclusiva di Ferrari, Lamborghini e Lotus curate da Francesco Abate.</p>
+            <a href="#catalogo" class="btn btn-primary">Esplora la Collezione</a>
+        </div>
+    </section>
+
+    <!-- Chi Siamo -->
+    <section id="chi-siamo" class="about">
+        <div class="container">
+            <div class="about-card">
+                <h2>La Visione di Francesco Abate</h2>
+                <p>Abate Motors nasce dalla passione per le prestazioni estreme e l'ingegneria d'élite. Selezioniamo solo i modelli più esclusivi al mondo, garantendo un'esperienza d'acquisto riservata, trasparente e di altissimo livello.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalogo Supercar -->
+    <section id="catalogo" class="cars">
+        <div class="container">
+            <h2 class="section-title">Le Nostre Supercar</h2>
+            <div class="cars-grid">
+
+                <!-- Ferrari -->
+                <article class="car-card">
+                    <div class="car-img-wrapper">
+                        <img src="images/ferrari-sf90.jpg" alt="Ferrari SF90 Stradale">
+                        <span class="badge ferrari">Ferrari</span>
+                    </div>
+                    <div class="car-details">
+                        <h3>Ferrari SF90 Stradale</h3>
+                        <p class="specs">V8 Bi-Turbo Hybrid | 1.000 CV | 0-100 km/h: 2.5s</p>
+                        <a href="#contatti" class="btn-card">Richiedi Informazioni</a>
+                    </div>
+                </article>
+
+                <!-- Lamborghini -->
+                <article class="car-card">
+                    <div class="car-img-wrapper">
+                        <img src="images/lamborghini-revuelto.jpg" alt="Lamborghini Revuelto">
+                        <span class="badge lamborghini">Lamborghini</span>
+                    </div>
+                    <div class="car-details">
+                        <h3>Lamborghini Revuelto</h3>
+                        <p class="specs">V12 Hybrid HPEV | 1.015 CV | 0-100 km/h: 2.5s</p>
+                        <a href="#contatti" class="btn-card">Richiedi Informazioni</a>
+                    </div>
+                </article>
+
+                <!-- Lotus -->
+                <article class="car-card">
+                    <div class="car-img-wrapper">
+                        <img src="images/lotus-emira.jpg" alt="Lotus Emira">
+                        <span class="badge lotus">Lotus</span>
+                    </div>
+                    <div class="car-details">
+                        <h3>Lotus Emira</h3>
+                        <p class="specs">V6 Supercharged | 400 CV | Puro Piacere di Guida</p>
+                        <a href="#contatti" class="btn-card">Richiedi Informazioni</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contatti -->
+    <footer id="contatti" class="footer">
+        <div class="container footer-container">
+            <h2>Abate Motors di Francesco Abate</h2>
+            <p>Showroom Privato — Visite su appuntamento</p>
+            <div class="contact-info">
+                <p>Email: <strong>info@abatemotors.com</strong></p>
+                <p>Telefono: <strong>+39 02 1234567</strong></p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abate Motors. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
