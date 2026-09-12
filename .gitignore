@@ -1,5 +1,15 @@
-# File temporanei di log
-*.log
+# File di sistema operativo
+.DS_Store
+Thumbs.db
 
-# Cartelle temporanee
-temp/
+# Cartelle di configurazione dell'editor
+.vscode/
+.idea/
+
+# Eventuali file temporanei o log
+*.log 
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
